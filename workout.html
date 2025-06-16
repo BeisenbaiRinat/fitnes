@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренировки - Денсаулық және Фитнес Қосымшасы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Тренировки</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="workout.html">Тренировки</a></li>
+                <li><a href="motivational.html">Мотивация</a></li>
+                <li><a href="progress.html">Прогресс</a></li>
+                <li><a href="saved_workouts.html">Мои тренировки</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="add-workout" class="add-workout">
+            <h2>Добавить новую тренировку</h2>
+            <form id="workout-form">
+                <label for="workout-name">Название тренировки:</label>
+                <input type="text" id="workout-name" name="workout-name" placeholder="Введите название" required>
+                
+                <label for="workout-duration">Продолжительность (в минутах):</label>
+                <input type="number" id="workout-duration" name="workout-duration" placeholder="Например: 45" required>
+                
+                <label for="workout-description">Описание тренировки:</label>
+                <textarea id="workout-description" name="workout-description" rows="4" placeholder="Введите описание..." required></textarea>
+
+                <button type="submit" class="submit-btn">Добавить тренировку</button>
+            </form>
+        </section>
+
+        <section id="workout-list" class="workout-list">
+            <h2>Мои тренировки</h2>
+            <div id="workouts-container">
+                <!-- Сюда будут добавляться тренировки -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Денсаулық және Фитнес Қосымшасы</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
